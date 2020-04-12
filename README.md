@@ -52,4 +52,10 @@ conda install git numpy scipy pandas matplotlib notebook
 
 Install the project in development mode by running `python setup.py develop`. If you use notebooks, this will ensure that you can access your modules.
 
-Edit this file to describe your actual project.
+## Project Description
+My project is using my labs eeg data to look at pilot mismatch eeg recordings from zebra finch subjects. My goal is to be able to:
+Locate time points where stimulus was presented across all channels
+Identify which stimulus were presented when
+Average eeg data around these stimulus onsets
+Compare between oddball stimulus and common stimulus
+
