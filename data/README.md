@@ -1,7 +1,12 @@
 
 Edit this file to describe how to retrieve the data set. Except for very small data files, it's not recommended to check data into version control.
 The data files are stored in .arf format which can be accessed using the h5py package. I have included a demo script that I ran that can retrieve the data off my computer. I had to download all the data from the lab servers onto my laptop because my VPN is not working and I do not have access to campus due to the COVID-19 pandemic. 
-with h5.File('resources\P1\P1_20190912_mismatch_r1.arf','r') as P1:
+Instructions for access to data:
+Contact Dr. Meliza to have the resources file sent to you. The resources file will have the data.
+Download the data and save it to a folder.
+Set the folder as your working directory.
+
+with h5.File('resources\P1\P1_20190912_mismatch_r2.arf','r') as P1:
     ls=list(P1.keys())
     print('List of datasets in this file:\n',ls)
     data=P1.get('rec_0')
